@@ -1,0 +1,29 @@
+Sample Usage:
+
+First duplicate: 
+
+# first_duplicate [1;2;3;4;5;6;7;8;9;8;3];;
+: int = 3
+# first_duplicate [1;2;3;4;5;6;7;8;9;10];;
+: int = -10000
+
+First Non-Repeating
+
+# first_nonrepeating [1;2;3;2;13;1;5;9;3];;
+: int = 13
+# first_nonrepeating [1;2;3;4;5;1;2;3;4;5];;
+: int = -10000
+
+Sum of Two
+
+# sumOfTwo([1;2;3],[10;20;30;40],41);;
+: bool = true
+# sumOfTwo([1;2;3],[10;20;30;40],44);;
+: bool = false
+
+CYK Sublists
+
+# cyk_sublists 3;;
+: (int * int) list = [(1, 2); (2, 1)]
+# cyk_sublists 5;;
+: (int * int) list = [(1, 4); (2, 3); (3, 2); (4, 1)]
